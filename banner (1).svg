@@ -1,0 +1,139 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1420"/>
+      <stop offset="60%" stop-color="#101c2c"/>
+      <stop offset="100%" stop-color="#0a1118"/>
+    </linearGradient>
+    <linearGradient id="tankGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3fd6a8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1c8a6e" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="tankGlowSoft" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#4de8b5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4de8b5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd89b" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd89b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="screenGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bcd9ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#bcd9ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dce8ff"/>
+      <stop offset="100%" stop-color="#a9c4f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#room)"/>
+
+  <!-- window on the left -->
+  <g>
+    <rect x="30" y="20" width="230" height="220" fill="#0e1c2a" stroke="#26374a" stroke-width="4"/>
+    <line x1="145" y1="20" x2="145" y2="240" stroke="#26374a" stroke-width="4"/>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#26374a" stroke-width="4"/>
+    <!-- blurred greenery outside -->
+    <g opacity="0.35" fill="#3c6b52">
+      <ellipse cx="90" cy="60" rx="50" ry="30"/>
+      <ellipse cx="180" cy="50" rx="60" ry="35"/>
+      <ellipse cx="130" cy="90" rx="70" ry="30"/>
+    </g>
+    <!-- rain streaks -->
+    <g stroke="#7fa8c9" stroke-width="1.4" opacity="0.4" stroke-linecap="round">
+      <line x1="45" y1="35" x2="35" y2="70"/>
+      <line x1="70" y1="45" x2="58" y2="85"/>
+      <line x1="100" y1="30" x2="88" y2="75"/>
+      <line x1="130" y1="55" x2="118" y2="95"/>
+      <line x1="165" y1="35" x2="153" y2="80"/>
+      <line x1="195" y1="50" x2="183" y2="90"/>
+      <line x1="225" y1="30" x2="213" y2="70"/>
+      <line x1="60" y1="140" x2="48" y2="180"/>
+      <line x1="100" y1="150" x2="88" y2="195"/>
+      <line x1="150" y1="145" x2="138" y2="185"/>
+      <line x1="190" y1="155" x2="178" y2="200"/>
+      <line x1="230" y1="140" x2="218" y2="180"/>
+    </g>
+  </g>
+
+  <!-- desk lamp warm glow -->
+  <circle cx="95" cy="270" r="70" fill="url(#lampGlow)"/>
+  <g fill="#12202f">
+    <rect x="80" y="330" width="10" height="60"/>
+    <path d="M 60 260 Q 90 235 122 258 L 110 278 Q 88 262 70 280 Z"/>
+  </g>
+
+  <!-- fish tank on the right -->
+  <g>
+    <rect x="900" y="40" width="260" height="30" rx="4" fill="#0c1a15"/>
+    <rect x="900" y="70" width="260" height="180" fill="url(#tankGlow)" opacity="0.85"/>
+    <rect x="900" y="70" width="260" height="180" fill="none" stroke="#0c1a15" stroke-width="4"/>
+    <ellipse cx="1030" cy="150" rx="180" ry="130" fill="url(#tankGlowSoft)"/>
+    <!-- water plants -->
+    <g stroke="#146b52" stroke-width="4" fill="none" opacity="0.8" stroke-linecap="round">
+      <path d="M 930 250 Q 925 210 940 180"/>
+      <path d="M 950 250 Q 960 200 945 165"/>
+      <path d="M 1120 250 Q 1130 200 1115 170"/>
+      <path d="M 1140 250 Q 1135 210 1150 180"/>
+    </g>
+    <!-- fish -->
+    <g fill="#ffd27a" opacity="0.9">
+      <ellipse cx="985" cy="120" rx="10" ry="5"/>
+      <ellipse cx="1060" cy="160" rx="8" ry="4"/>
+      <ellipse cx="1015" cy="190" rx="9" ry="4.5"/>
+    </g>
+    <!-- rim light -->
+    <rect x="900" y="70" width="260" height="180" fill="#4de8b5" opacity="0.06"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="60" y="310" width="1080" height="18" rx="3" fill="#1b2733"/>
+  <rect x="90" y="328" width="16" height="70" fill="#131c26"/>
+  <rect x="1090" y="328" width="16" height="70" fill="#131c26"/>
+
+  <!-- laptop -->
+  <ellipse cx="430" cy="270" rx="120" ry="90" fill="url(#screenGlow2)"/>
+  <g>
+    <rect x="360" y="235" width="130" height="80" rx="6" fill="#0e1620"/>
+    <rect x="369" y="243" width="112" height="62" rx="3" fill="url(#screen2)"/>
+    <path d="M 330 315 L 520 315 L 500 332 L 350 332 Z" fill="#131d29"/>
+  </g>
+  <g stroke="#8fa6c4" stroke-width="2" opacity="0.55" stroke-linecap="round">
+    <line x1="378" y1="255" x2="425" y2="255"/>
+    <line x1="378" y1="265" x2="450" y2="265"/>
+    <line x1="378" y1="275" x2="410" y2="275"/>
+    <line x1="378" y1="285" x2="440" y2="285"/>
+  </g>
+
+  <!-- sleeping figure, head resting on crossed arms at the desk -->
+  <g fill="#14202c">
+    <path d="M 470 300 Q 500 260 545 275 Q 585 290 590 320 L 600 332 L 455 332 Q 452 315 470 300 Z"/>
+    <ellipse cx="555" cy="270" rx="34" ry="30"/>
+    <path d="M 525 250 Q 555 225 590 245 Q 600 265 585 285 Q 560 250 525 250 Z"/>
+  </g>
+  <!-- shirt back -->
+  <path d="M 460 332 Q 465 295 520 292 Q 585 292 605 332 Z" fill="#e7ecf5" opacity="0.9"/>
+
+  <!-- iced coffee -->
+  <g>
+    <path d="M 640 300 L 668 300 L 663 335 L 645 335 Z" fill="#bcd7e6" opacity="0.4"/>
+    <path d="M 640 300 L 668 300 L 663 335 L 645 335 Z" fill="none" stroke="#8fb6c9" stroke-width="1.5"/>
+    <line x1="654" y1="285" x2="659" y2="300" stroke="#e8f3f8" stroke-width="3"/>
+  </g>
+
+  <!-- small potted plant -->
+  <g>
+    <rect x="700" y="300" width="26" height="18" rx="2" fill="#2a3b2c"/>
+    <path d="M 705 300 Q 700 280 710 270 M 713 300 Q 715 275 725 268 M 719 300 Q 725 282 733 275" stroke="#3f6b45" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- sticky notes on wall -->
+  <g>
+    <rect x="300" y="60" width="34" height="34" fill="#f4d35e" opacity="0.85" transform="rotate(-4 317 77)"/>
+    <rect x="300" y="105" width="34" height="34" fill="#8fd6c9" opacity="0.8" transform="rotate(3 317 122)"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#dce8f2" letter-spacing="1" opacity="0.9">still building, even half asleep 🌧️💻🐟</text>
+</svg>
