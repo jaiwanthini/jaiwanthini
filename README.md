@@ -6,7 +6,7 @@
 <h3 align="center">🩺 Almost became a doctor... became a debugger instead 🩹➡️💻</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Final-Year+AIML+Student+%F0%9F%A4%96;RAG+%2B+LangChain+%2B+Chaos+Engineering+%F0%9F%94%A5;Turning+Coffee+%E2%98%95+into+Code+%F0%9F%92%BB;Dancer+by+night%2C+Debugger+by+day+%F0%9F%92%83" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Final-Year+AIML+Student+%F0%9F%A4%96;RAG+%2B+LangChain+%2B+Chaos+Engineering+%F0%9F%94%A5;Turning+Coffee+%E2%98%95+into+Code+%F0%9F%92%BB;Dancer+by+day%2C+Debugger+by+night+%F0%9F%92%83" />
 </p>
 
 <p align="center">
